@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Conditional.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #808080;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Conditional.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Conditional {</span>
+    <span class="s0">public int</span><span class="s1">[] EvenOddNumber</span><span class="s0">;</span>
+    <span class="s0">public int</span><span class="s1">[] PosNegNumber</span><span class="s0">;</span>
+    <span class="s0">public int</span><span class="s1">[] PrimeOrNotNumber</span><span class="s0">;</span>
+
+    <span class="s0">public </span><span class="s1">Conditional(){</span>
+        <span class="s1">EvenOddNumber=</span><span class="s0">new int</span><span class="s1">[</span><span class="s2">100</span><span class="s1">]</span><span class="s0">;</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">x=</span><span class="s2">0</span><span class="s0">;</span><span class="s1">x&lt;</span><span class="s2">100</span><span class="s0">;</span><span class="s1">x++) {</span>
+            <span class="s1">EvenOddNumber[x]=x</span><span class="s0">;</span>
+            <span class="s3">//System.out.println(number[x]);</span>
+        <span class="s1">}</span>
+        <span class="s3">//evenOrOdd();</span>
+
+        <span class="s1">PosNegNumber=</span><span class="s0">new int</span><span class="s1">[</span><span class="s2">100</span><span class="s1">]</span><span class="s0">;</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">y=-</span><span class="s2">50</span><span class="s0">;</span><span class="s1">y&lt;</span><span class="s2">50</span><span class="s0">;</span><span class="s1">y++){</span>
+            <span class="s1">PosNegNumber[y+</span><span class="s2">50</span><span class="s1">]=y</span><span class="s0">;</span>
+            <span class="s3">//System.out.println(y);</span>
+        <span class="s1">}</span>
+        <span class="s3">//checkPositive();</span>
+
+        <span class="s1">PrimeOrNotNumber=</span><span class="s0">new int</span><span class="s1">[</span><span class="s2">100</span><span class="s1">]</span><span class="s0">;</span>
+        <span class="s0">for</span><span class="s1">(</span><span class="s0">int </span><span class="s1">z=</span><span class="s2">0</span><span class="s0">;</span><span class="s1">z&lt;</span><span class="s2">100</span><span class="s0">;</span><span class="s1">z++){</span>
+            <span class="s1">PrimeOrNotNumber[z]=z</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">checkPrime()</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {Conditional myConditional=</span><span class="s0">new </span><span class="s1">Conditional()</span><span class="s0">;</span><span class="s1">}</span>
+
+    <span class="s3">//check if number is even or odd</span>
+    <span class="s0">public void </span><span class="s1">evenOrOdd(){</span>
+        <span class="s0">for</span><span class="s1">(</span><span class="s0">int </span><span class="s1">x=</span><span class="s2">0</span><span class="s0">;</span><span class="s1">x&lt;</span><span class="s2">100</span><span class="s0">;</span><span class="s1">x++) {</span>
+            <span class="s0">if </span><span class="s1">(EvenOddNumber[x] % </span><span class="s2">2 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(EvenOddNumber[x])</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">checkPositive(){</span>
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">y=-</span><span class="s2">50</span><span class="s0">;</span><span class="s1">y&lt;</span><span class="s2">50</span><span class="s0">;</span><span class="s1">y++){</span>
+            <span class="s0">if</span><span class="s1">(PosNegNumber[y+</span><span class="s2">50</span><span class="s1">]&lt;</span><span class="s2">0</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;Negative!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+            <span class="s0">if</span><span class="s1">(PosNegNumber[y+</span><span class="s2">50</span><span class="s1">]&gt;</span><span class="s2">0</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;Positive!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+            <span class="s0">if</span><span class="s1">(PosNegNumber[y+</span><span class="s2">50</span><span class="s1">]==</span><span class="s2">0</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;0&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">checkPrime(){</span>
+        <span class="s0">for</span><span class="s1">(</span><span class="s0">int </span><span class="s1">z=</span><span class="s2">0</span><span class="s0">;</span><span class="s1">z&lt;</span><span class="s2">100</span><span class="s0">;</span><span class="s1">z++) {</span>
+            <span class="s0">if </span><span class="s1">(PrimeOrNotNumber[z] % </span><span class="s2">2 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">&amp;&amp; PrimeOrNotNumber[z]!=</span><span class="s2">2</span><span class="s1">) {</span>
+               <span class="s3">// System.out.println(PrimeOrNotNumber[z]+&quot; is divisible by 2&quot;);</span>
+               <span class="s0">continue;</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(PrimeOrNotNumber[z] % </span><span class="s2">3 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">&amp;&amp; PrimeOrNotNumber[z]!=</span><span class="s2">3</span><span class="s1">) {</span>
+                <span class="s0">continue;</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(PrimeOrNotNumber[z] % </span><span class="s2">4 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">) {</span>
+                <span class="s0">continue;</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(PrimeOrNotNumber[z] % </span><span class="s2">5 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">&amp;&amp; PrimeOrNotNumber[z]!=</span><span class="s2">5</span><span class="s1">) {</span>
+                <span class="s0">continue;</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(PrimeOrNotNumber[z] % </span><span class="s2">7 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">&amp;&amp; PrimeOrNotNumber[z]!=</span><span class="s2">7</span><span class="s1">) {</span>
+                <span class="s0">continue;</span>
+            <span class="s1">}</span>
+            <span class="s1">System.out.println(PrimeOrNotNumber[z] + </span><span class="s4">&quot; is prime!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

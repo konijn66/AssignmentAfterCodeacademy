@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>DataTypes.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+DataTypes.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">DataTypes {</span>
+
+    <span class="s0">byte </span><span class="s1">red=</span><span class="s2">2</span><span class="s0">;</span>
+    <span class="s0">short </span><span class="s1">orange=-</span><span class="s2">37</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">yellow=</span><span class="s2">1234567</span><span class="s0">;</span>
+    <span class="s0">long </span><span class="s1">green=</span><span class="s2">1234567891</span><span class="s0">;</span>
+    <span class="s0">double </span><span class="s1">blue= </span><span class="s2">2.222</span><span class="s0">;</span>
+    <span class="s0">char </span><span class="s1">purple=</span><span class="s3">'p'</span><span class="s0">;</span>
+    <span class="s0">boolean </span><span class="s1">isPink=</span><span class="s0">true;</span>
+
+    <span class="s0">double </span><span class="s1">DoubleToInt=</span><span class="s2">11</span><span class="s1">*(Math.random())</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">AsInt</span><span class="s0">;</span>
+
+    <span class="s0">int </span><span class="s1">IntToDouble=(</span><span class="s0">int</span><span class="s1">)(</span><span class="s2">10</span><span class="s1">*(Math.random()))</span><span class="s0">;</span>
+    <span class="s0">double </span><span class="s1">AsDouble</span><span class="s0">;</span>
+
+
+    <span class="s0">public </span><span class="s1">DataTypes(){</span>
+        <span class="s1">printDataTypes()</span><span class="s0">;</span>
+
+        <span class="s4">//ConvertToInt();</span>
+
+       <span class="s4">// ConvertToDouble();</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">DataTypes myDataTypes= </span><span class="s0">new </span><span class="s1">DataTypes()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+   <span class="s0">public void </span><span class="s1">printDataTypes(){</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;byte:&quot; </span><span class="s1">+red+</span><span class="s3">&quot; short:&quot;</span><span class="s1">+orange+</span><span class="s3">&quot; int:&quot;</span><span class="s1">+yellow+</span><span class="s3">&quot; &quot; </span><span class="s1">+</span>
+                <span class="s3">&quot;long:&quot;</span><span class="s1">+green+</span><span class="s3">&quot; double:&quot;</span><span class="s1">+blue+</span><span class="s3">&quot; char:&quot;</span><span class="s1">+purple+</span><span class="s3">&quot; boolean:&quot;</span><span class="s1">+isPink)</span><span class="s0">;</span>
+   <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">ConvertToInt(){</span>
+        <span class="s1">System.out.println(DoubleToInt)</span><span class="s0">;</span>
+        <span class="s1">AsInt= (</span><span class="s0">int</span><span class="s1">)DoubleToInt</span><span class="s0">;</span>
+        <span class="s1">System.out.println(AsInt)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">ConvertToDouble(){</span>
+        <span class="s1">System.out.println(IntToDouble)</span><span class="s0">;</span>
+        <span class="s1">AsDouble=IntToDouble</span><span class="s0">;</span>
+        <span class="s1">System.out.println(AsDouble)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">PrintingDatatypes(){</span>
+
+    <span class="s1">}</span>
+
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

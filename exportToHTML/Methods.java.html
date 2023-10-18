@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Methods.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Methods.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Methods {</span>
+    <span class="s1">String input</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">ChangeIndex</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">num1</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">num2</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">greatest</span><span class="s0">;</span>
+    <span class="s0">public </span><span class="s1">Methods(){</span>
+        <span class="s1">ReverseAString()</span><span class="s0">;</span>
+       <span class="s1">MaxNumber()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Methods myMethods=</span><span class="s0">new </span><span class="s1">Methods()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">ReverseAString(){</span>
+        <span class="s1">input=(</span><span class="s2">&quot;It is Wednesday&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(input)</span><span class="s0">;</span>
+       <span class="s3">// System.out.println(&quot;testing&quot;);</span>
+        <span class="s3">//System.out.println(input.length());</span>
+
+        <span class="s0">for</span><span class="s1">(</span><span class="s0">int </span><span class="s1">z=input.length()-</span><span class="s4">1</span><span class="s0">;</span><span class="s1">z&gt;=</span><span class="s4">0</span><span class="s0">;</span><span class="s1">z--){</span>
+            <span class="s3">//System.out.println(z);</span>
+            <span class="s3">//System.out.println(&quot;reversing&quot;);</span>
+            <span class="s1">System.out.print(input.charAt(z))</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+       <span class="s3">// System.out.println(input.length());</span>
+        <span class="s3">//System.out.println(input.indexOf(&quot;e&quot;));</span>
+
+       <span class="s3">/* for(int x=0;x&lt;input.length();x++){ 
+           System.out.println( &quot;At character &quot;+x+&quot; the letter is &quot;+input.charAt(x)); 
+           ChangeIndex=input.length()-x; 
+           //input.charAt(x)=input.charAt(ChangeIndex); 
+           System.out.println(input.indexOf(input.charAt(x))); 
+ 
+        } 
+        System.out.println(input); */</span>
+
+
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">MaxNumber(){</span>
+        <span class="s1">num1=(</span><span class="s0">int</span><span class="s1">)(</span><span class="s4">100</span><span class="s1">*(Math.random()))</span><span class="s0">;</span>
+        <span class="s1">num2=(</span><span class="s0">int</span><span class="s1">)(</span><span class="s4">100</span><span class="s1">*(Math.random()))</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;num1=&quot;</span><span class="s1">+num1+</span><span class="s2">&quot;  num2=&quot;</span><span class="s1">+num2)</span><span class="s0">;</span>
+        <span class="s1">greatest=num2</span><span class="s0">;</span>
+
+        <span class="s0">if</span><span class="s1">(num1&gt;num2){</span>
+            <span class="s1">greatest=num1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Max=&quot; </span><span class="s1">+greatest)</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
